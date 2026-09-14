@@ -1,0 +1,240 @@
+/* 1 - Inline, head, externo e Comentários */
+body {
+  margin-bottom: 1500px;
+}
+
+/* 2 - Sintaxe básica */
+p {
+  font-family: Arial, sans-serif; /* Define a família da fonte */
+  line-height: 1.6; /* Define a altura da linha */
+  margin-bottom: 20px; /* Define a margem inferior para separação */
+}
+
+/* 3 - Seletores comuns */
+/* Selecionando elementos pela tag */
+h2 {
+  color: blue;
+}
+
+/* Selecionando elementos pela classe */
+.paragrafo {
+  font-size: 16px;
+}
+
+/* Selecionando elementos pelo ID */
+#destaque {
+  background-color: yellow;
+}
+
+/* 4 - Propriedades de texto */
+.basic-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.styled-text {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000080; /* Um azul marinho */
+}
+
+.weighty-text {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold; /* Texto em negrito */
+  color: #d2691e; /* Um marrom chocolate */
+}
+
+.fancy-text {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #2e8b57; /* Uma cor verde mar */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+/* 5 - Fundamentos das cores */
+.hex-color {
+  color: #ff6347; /* Um tom de vermelho tomate */
+}
+
+.rgb-color {
+  color: rgb(34, 139, 34); /* Um verde floresta usando RGB */
+}
+
+/* Hue, Saturation, Lightness */
+.hsl-color {
+  color: hsl(240, 100%, 50%); /* Um azul brilhante usando HSL */
+}
+
+.rgba-color {
+  color: rgba(255, 99, 71, 0.5); /* Vermelho tomate com 50% de opacidade */
+  background-color: #000; /* Fundo preto para destacar a opacidade */
+}
+
+.hsla-color {
+  color: hsla(120, 100%, 50%, 0.3); /* Verde com 30% de opacidade */
+  background-color: #fff; /* Fundo branco para destacar a opacidade */
+}
+
+/* 6 - Estilização de links */
+.simple-link {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #0000ff; /* Cor azul padrão para links */
+}
+
+.fancy-link {
+  text-decoration: underline; /* Mantém o sublinhado para destacar o link */
+  color: #8a2be2; /* Uma cor violeta */
+  font-style: italic; /* Texto em itálico */
+}
+
+.hover-link {
+  text-decoration: none;
+  color: #ff4500; /* Um laranja forte */
+  transition: color 0.3s; /* Suaviza a transição da cor */
+}
+
+.hover-link:hover {
+  color: #32cd32; /* Muda para verde quando o mouse passa sobre o link */
+}
+
+.bold-link {
+  text-decoration: underline dotted; /* Sublinhado pontilhado */
+  color: #2f4f4f; /* Um cinza escuro */
+  font-weight: bold; /* Aumenta o peso da fonte para negrito */
+}
+
+/* 7 - Box Model */
+.width-height {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #000; /* Borda preta para visualização */
+  background-color: #ff6347; /* Tomate */
+}
+
+.padding-example {
+  width: 200px;
+  height: 100px;
+  padding-top: 20px; /* Preenchimento no topo */
+  padding-right: 30px; /* Preenchimento à direita */
+  padding-bottom: 20px; /* Preenchimento embaixo */
+  padding-left: 30px; /* Preenchimento à esquerda */
+  border: 2px solid #000; /* Borda preta para visualização */
+  background-color: #4682b4; /* Aço Azul */
+}
+
+.margin-example {
+  width: 200px;
+  height: 100px;
+  margin: 30px; /* Margem uniforme ao redor */
+  border: 2px solid #000; /* Borda preta para visualização */
+  background-color: #32cd32; /* Verde Limão */
+}
+
+.complete-box {
+  width: 200px;
+  height: 100px;
+  padding: 15px; /* Preenchimento uniforme ao redor */
+  margin-top: 15px; /* Margem no topo */
+  margin-right: 25px; /* Margem à direita */
+  margin-bottom: 15px; /* Margem embaixo */
+  margin-left: 25px; /* Margem à esquerda */
+  border: 5px solid #8b4513; /* Borda marrom */
+  background-color: #ffd700; /* Ouro */
+  box-sizing: border-box; /* A borda e o padding são incluídos nas dimensões totais */
+}
+
+/* 8 - Positions */
+.static-example {
+  position: static;
+  background-color: #90ee90; /* Cor light green */
+  border: 2px solid black;
+}
+
+.relative-example {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: #add8e6; /* Cor light blue */
+  border: 2px solid black;
+}
+
+.absolute-example {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  background-color: #ffb6c1; /* Cor light pink */
+  border: 2px solid black;
+}
+
+.fixed-example {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #afeeee; /* Cor pale turquoise */
+  border: 2px solid black;
+}
+
+.sticky-example {
+  position: -webkit-sticky; /* Necessário para suporte Safari */
+  position: sticky;
+  top: 0;
+  background-color: #dda0dd; /* Cor plum */
+  border: 2px solid black;
+}
+
+.relative-container {
+  position: relative;
+  height: 100px;
+  margin-top: 300px; /* Espaço para visualização clara */
+  background-color: #f0e68c; /* Cor khaki */
+  border: 2px solid black;
+}
+
+.absolute-inside-relative {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50%;
+  background-color: #ffdead; /* Navajo White */
+  border: 2px solid black;
+}
+
+/* 9 - Introdução ao flexbox */
+.flex-container {
+  display: flex; /* Ativa o Flexbox */
+  border: 2px solid #333; /* Adiciona uma borda para visualizar o contêiner */
+  padding: 10px;
+  height: 1000px;
+}
+
+.flex-item {
+  width: 100px; /* Largura fixa para os itens para diferenciar */
+  margin: 5px; /* Margem entre os itens */
+  padding: 10px;
+  border: 1px solid blue; /* Borda para visualizar os itens */
+}
+
+/* Alinhamento */
+.flex-container {
+  justify-content: flex-start; /* Alinha itens ao início do contêiner */
+}
+
+.flex-container {
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Flexibilidade */
+.flex-item {
+  flex: 1;
+}
+
+/* Layout de coluna */
+.flex-container {
+  flex-direction: column;
+}
